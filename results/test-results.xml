@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.165" tests="3" failures="0">
+  <testsuite name="" timestamp="2024-05-16T13:28:54" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Status and content" timestamp="2024-05-16T13:28:54" tests="0" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.Search Cases" timestamp="2024-05-16T13:28:54" tests="2" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.160" failures="0">
+    <testcase name="Status" time="0.144" classname="Status and content.Search Cases">
+    </testcase>
+    <testcase name="Case Number" time="0.015" classname="Status and content.Search Cases">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.County List" timestamp="2024-05-16T13:28:54" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.004" failures="0">
+    <testcase name="All counties" time="0.004" classname="Status and content.County List">
+    </testcase>
+  </testsuite>
+</testsuites>
