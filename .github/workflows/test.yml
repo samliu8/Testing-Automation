@@ -16,7 +16,7 @@ jobs:
         - run: npm ci
         - run: npm install --no-save @testmo/testmo-cli
         - run: |
-            echo "token length: ${#TESTMO_TOKEN }"
+            echo "token length: ${#TESTMO_TOKEN}"
             echo "url length: ${#secrets.TESTMO_URL}"
 
         - run: |
