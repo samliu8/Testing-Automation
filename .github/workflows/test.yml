@@ -6,7 +6,7 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
-    
+
     steps:
         - uses: actions/checkout@v3
         - uses: actions/setup-node@v3
@@ -14,4 +14,15 @@ jobs:
             node-version: 19
             cache: npm
         - run: npm ci
-        - run: npm run mocha
+        - run: npm install --no-save @testmo/testmo-cli
+        - run: |
+            npx testmo automation:run:submit \
+                --instance "$TESTMO_URL" \
+                --project-id 2 \
+                --name "CARES" \
+                --source "unit-tests" \
+                --results results/*.xml \
+                -- npm run mocha-junit # Note space after --
+            env:
+            TESTMO_URL: ${{ secrets.TESTMO_URL }}
+            TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
