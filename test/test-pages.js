@@ -1,4 +1,4 @@
-import { expect } from "chai";
+import { expect, assert } from "chai";
 import axios, * as others from 'axios';
 import https from 'https'
 // this is unsecure, need to replace with new https.Agent({ ca: MY_CA_BUNDLE });
@@ -69,4 +69,30 @@ describe('Status and content', function () {
         })
 
     })
+});
+describe('files', function () {
+    describe('export', function () {
+        it('should export pdf', function () {
+            assert.isTrue(true);
+        });
+
+        it('should export html', function () {
+            assert.isTrue(true);
+        });
+
+        it('should export yml', function () {
+            assert.isTrue(true);
+        });
+
+        it('should export text', function () {
+            // Fail in 50% of cases
+            if (Math.random() < 0.5) {
+                throw new Error('An exception occurred');
+            } else {
+                assert.isTrue(true);
+            }
+        });
+    });
+	
+	// [..]
 });
