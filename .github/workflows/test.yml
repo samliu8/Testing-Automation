@@ -17,7 +17,7 @@ jobs:
         - run: npm install --no-save @testmo/testmo-cli
         - run: |
             echo "token length: ${#TESTMO_TOKEN}"
-            echo "url length: ${#secrets.TESTMO_URL}"
+            echo "url length: ${#TESTMO_URL}"
 
         - run: |
             npx testmo automation:run:submit \
