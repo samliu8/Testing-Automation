@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.582" tests="7" failures="1" skipped="1">
+  <testsuite name="" timestamp="2024-05-21T12:57:53" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Child Screen" timestamp="2024-05-21T12:57:53" tests="0" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\child-test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Child Screen.Search" timestamp="2024-05-21T12:57:53" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\child-test.js" time="2.056" failures="1">
+    <testcase name="Search by CaseId" time="2.055" classname="Child Screen.Search">
+      <failure message="Timeout of 2000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\child-test.js)" type="Error"><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\child-test.js)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Member Details" timestamp="2024-05-21T12:57:55" tests="0" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\memberdetails-test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Member Details.Search" timestamp="2024-05-21T12:57:55" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\memberdetails-test.js" time="0.290" failures="0">
+    <testcase name="Search by CaseId" time="0.289" classname="Member Details.Search">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Member Details.Form UI" timestamp="2024-05-21T12:57:55" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\memberdetails-test.js" time="0.063" failures="0">
+    <testcase name="Valid First Name" time="0.062" classname="Member Details.Form UI">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Status and content" timestamp="2024-05-21T12:57:55" tests="0" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.Main Page" timestamp="2024-05-21T12:57:55" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.086" failures="0">
+    <testcase name="Status" time="0.086" classname="Status and content.Main Page">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.Search Cases" timestamp="2024-05-21T12:57:55" tests="1" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.021" failures="0">
+    <testcase name="Status" time="0.021" classname="Status and content.Search Cases">
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.County List" timestamp="2024-05-21T12:57:55" tests="0" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Root Suite.Status and content.County List.Basic test cases" timestamp="2024-05-21T12:57:55" tests="2" file="C:\Users\sliu\OneDrive - NJDHS\Documents\GitHub\Testing-Automation\test\test-pages.js" time="0.063" failures="0">
+    <testcase name="All counties" time="0.063" classname="Status and content.County List.Basic test cases">
+    </testcase>
+  </testsuite>
+</testsuites>
