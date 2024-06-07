@@ -13,8 +13,7 @@ jobs:
           with:
             node-version: 14
             cache: npm
-        - name: checking directory
-          working-directory: ./app   
+        - name: checking directory  
           run : ls
         - name: installing depencies
           run: npm ci
