@@ -1,5 +1,5 @@
 import { expect, assert } from "chai";
-import axios, * as others from 'axios';
+import axios from 'axios';
 import https from 'https'
 import { schoolDistricts } from "./Data/school-districts.js";
 import { counties } from "./Data/counties.js";

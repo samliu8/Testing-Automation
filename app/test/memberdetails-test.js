@@ -1,5 +1,5 @@
 import { expect, assert } from "chai";
-import axios, * as others from 'axios';
+// import axios, * as others from 'axios';
 import https from 'https'
 // this is unsecure, need to replace with new https.Agent({ ca: MY_CA_BUNDLE });
 const httpsAgent = new https.Agent({ rejectUnauthorized: false })
