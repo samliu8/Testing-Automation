@@ -11,23 +11,12 @@ jobs:
         - uses: actions/checkout@v3
         - uses: actions/setup-node@v3
           with:
-            node-version: 19
+            node-version: 22
             cache: npm
-        - run: npm ci
-        - run: npm install --no-save @testmo/testmo-cli
-        - run: |
-            echo "token length: ${#TESTMO_TOKEN}"
-            echo "url length: ${#TESTMO_URL}"
-
-        - run: |
-        
-            npx testmo automation:run:submit \
-                --instance "$TESTMO_URL" \
-                --project-id 2 \
-                --name "CARES" \
-                --source "unit-tests" \
-                --results results/*.xml \
-                -- npm run mocha-junit # Note space after --
-            env:
-            TESTMO_URL: ${{ secrets.TESTMO_URL }}
-            TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+        - name: checking directory
+          working-directory: ./app   
+          run : ls
+        - name: installing depencies
+          run: npm ci
+        - name: running tests
+          run: npm test
