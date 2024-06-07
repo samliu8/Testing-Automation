@@ -1,0 +1,24 @@
+name: Test
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+        - name: checkout directory
+          uses: actions/checkout@v2
+        - name: use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v2
+          with: 
+            node-version: ${{ matrix-node-version }}
+        - name: installing depencies
+          run: npm ci
+          working-directory: ./app  
+        - name: running tests
+          run: npm test
+          working-directory: ./app  
